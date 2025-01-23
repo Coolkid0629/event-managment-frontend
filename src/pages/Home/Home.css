@@ -1,0 +1,16 @@
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-100% * var(--image-count)));
+  }
+}
+
+.relative {
+  --image-count: 3; /* Update this value based on the number of images */
+}
+
+.absolute {
+  animation: scroll 30s linear infinite;
+}
